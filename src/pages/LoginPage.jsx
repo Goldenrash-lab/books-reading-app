@@ -14,7 +14,7 @@ const LoginPage = () => {
         </div>
       </header>
       <div className="flex flex-col desktop:flex-row">
-        <div className="flex justify-center mb-[20px] tablet:mb-[64px] desktop:mb-0 bg-no-repeat bg-center bg-cover items-center bg-[url('./src/images/loginBG.jpg')] relative">
+        <div className="flex justify-center mb-[20px] tablet:mb-[64px] desktop:mb-0 bg-no-repeat bg-center bg-cover items-center bg-[url('/img/loginBG.jpg')] relative">
           <div className="z-0 bg-overlayColor opacity-80 absolute left-0 top-0 w-full h-full "></div>
           <LoginForm />
         </div>

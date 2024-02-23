@@ -11,9 +11,6 @@ export default {
       xl: "1440px",
     },
     extend: {
-      backgroundImage: {
-        "login-bg": "url('./src/images/loginBGoverlay.jpg')",
-      },
       fontFamily: {
         sans: ['"Montserrat"', ...defaultTheme.fontFamily.sans],
       },
