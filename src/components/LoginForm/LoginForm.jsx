@@ -3,8 +3,8 @@ import GoogleIcon from "../../images/GoogleIcon";
 
 const LoginForm = () => {
   return (
-    <div className="py-44 px-20 z-10 ">
-      <form className="flex flex-col bg-[white] p-10 justify-center items-center">
+    <div className="tablet:py-[64px] tablet:px-[185px] desktop:py-44 desktop:px-20 z-10 flex justify-center items-center">
+      <form className="flex flex-col tablet:bg-[white] py-[32px] tablet:p-10 justify-center items-center  ">
         <button
           className="flex relative justify-center mb-7 items-center text-base shadow-md  w-[150px] h-10 bg-[#F5F7FA] font-[Roboto] font-bold text-[#707375]"
           type="button"
@@ -17,7 +17,7 @@ const LoginForm = () => {
             Електронна адреса <span className="text-[red]">*</span>
           </div>
           <input
-            className="w-80 p-3 h-[42px] bg-[#F5F7FA] shadow-inner"
+            className="w-[280px] tablet:w-80 p-3 h-[42px] bg-[#F5F7FA] shadow-inner"
             name="email"
             type="text"
             placeholder="your@email.com"
@@ -28,14 +28,14 @@ const LoginForm = () => {
             Пароль <span className="text-[red]">*</span>
           </div>
           <input
-            className="w-80 p-3 h-[42px] bg-[#F5F7FA] shadow-inner"
+            className="w-[280px] tablet:w-80 p-3 h-[42px] bg-[#F5F7FA] shadow-inner"
             name="password"
             type="text"
             placeholder="Пароль"
           />
         </label>
         <button
-          className=" py-5 px-32 h-[60px] mb-5 bg-[#FF6B08] text-[white] font-[Montserrat]"
+          className="py-[20px] px-[110px] tablet:py-5 tablet:px-32 h-[60px] mb-5 bg-[#FF6B08] text-[white] font-[Montserrat]"
           type="submit"
         >
           Увійти

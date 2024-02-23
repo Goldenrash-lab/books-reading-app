@@ -1,10 +1,21 @@
+import defaultTheme from "tailwindcss/defaultTheme";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
+    screens: {
+      mobile: "320px",
+      tablet: "768px",
+      desktop: "1280px",
+      xl: "1440px",
+    },
     extend: {
       backgroundImage: {
         "login-bg": "url('./src/images/loginBGoverlay.jpg')",
+      },
+      fontFamily: {
+        sans: ['"Montserrat"', ...defaultTheme.fontFamily.sans],
       },
     },
     colors: {
