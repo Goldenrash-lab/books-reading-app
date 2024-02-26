@@ -1,23 +1,15 @@
+import AuthFormWrapper from "../components/AuthFormWrapper/AuthFormWrapper";
+import AuthHeader from "../components/AuthHeader/AuthHeader";
 import LoginForm from "../components/LoginForm/LoginForm";
 import QuotesIcon from "../images/QuotesIcon";
 const LoginPage = () => {
   return (
     <div className="max-w-screen-xl mx-auto">
-      <header className="shadow-md">
-        <div className="px-4 tablet:px-8 desktop:px-4 text-center tablet:text-left">
-          <span
-            className="py-4 inline-block  font-extrabold text-blue-950 text-xl font-[Abril-Fatface] "
-            href="#"
-          >
-            BR
-          </span>
-        </div>
-      </header>
+      <AuthHeader />
       <div className="flex flex-col desktop:flex-row">
-        <div className="flex justify-center mb-[20px] tablet:mb-[64px] desktop:mb-0 bg-no-repeat bg-center bg-cover items-center bg-[url('/img/loginBG.jpg')] relative">
-          <div className="z-0 bg-overlayColor opacity-80 absolute left-0 top-0 w-full h-full "></div>
+        <AuthFormWrapper>
           <LoginForm />
-        </div>
+        </AuthFormWrapper>
         <div className="flex flex-col justify-center items-center w-full mb-[16px] tablet:mb-[71px] desktop:mb-[0px]">
           <div className="flex flex-col justify-center items-center max-w-[229px] tablet:max-w-[397px]">
             <QuotesIcon />
