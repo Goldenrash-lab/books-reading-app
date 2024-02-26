@@ -4,7 +4,7 @@ const AuthFormWrapper = ({ children }) => {
   const location = useLocation();
   let isSignUp = "h-full";
   if (location.pathname === "/signup") {
-    isSignUp = "h-[calc(100vh-60px)]";
+    isSignUp = "min-h-[calc(100vh-60px)]";
   }
   return (
     <div
