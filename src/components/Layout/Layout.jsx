@@ -1,23 +1,12 @@
 import { NavLink, Outlet } from "react-router-dom";
+import Header from "../Header/Header";
 
 const Layout = () => {
   return (
-    <>
-      <header>
-        <nav className="">
-          <NavLink className="px-3" to="/">
-            Home
-          </NavLink>
-          <NavLink className="px-3" to="/login">
-            Login
-          </NavLink>
-          <NavLink className="px-3" to="/signup">
-            Reg
-          </NavLink>
-        </nav>
-      </header>
+    <div className="max-w-screen-xl mx-auto">
+      <Header />
       <Outlet />
-    </>
+    </div>
   );
 };
 

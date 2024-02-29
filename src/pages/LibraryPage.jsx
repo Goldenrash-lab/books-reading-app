@@ -1,11 +1,12 @@
+import AddBook from "../components/AddBook/AddBook";
+import GuideLibrary from "../components/GuideLibrary/GuideLibrary";
+
 const LibraryPage = () => {
   return (
-    <h1 className="mt-9 text-center text-4xl">
-      LibraryPage
-      <br />
-      <br />
-      WELCOME!
-    </h1>
+    <>
+      <AddBook />
+      <GuideLibrary />
+    </>
   );
 };
 
