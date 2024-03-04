@@ -1,5 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { loginThunk, refreshThunk, registerThunk, setTokenToLS } from './thunk'
+import {
+  loginThunk,
+  logoutThunk,
+  refreshThunk,
+  registerThunk,
+  setTokenToLS,
+} from './thunk'
 
 const authSlice = createSlice({
   name: 'auth',
@@ -27,6 +33,13 @@ const authSlice = createSlice({
         setTokenToLS(payload.newRefreshToken, payload.newSid)
       })
       .addCase(refreshThunk.rejected, (state, { payload }) => {
+        state.error = payload
+      })
+      .addCase(logoutThunk.fulfilled, (state) => {
+        state.user = null
+        localStorage.clear()
+      })
+      .addCase(logoutThunk.rejected, (state, { payload }) => {
         state.error = payload
       })
   },
